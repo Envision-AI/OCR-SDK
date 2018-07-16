@@ -1,15 +1,27 @@
 # Envision OCR  SDK Documentation
 
 ## Current OCR SDK version
-Version: 1.0
+Version: 1.1.4
 
 Release Date: 16/07/2018
 
 # Overview
 
-The Envision OCR SDK is capable for reading scene text(text appearing in the wild) and dense text present in documents accurately and quickly. The SDK is currently available for iOS. The SDK is able to recognise over 60 different languages and provide the text, position of the words on the image and the language detected. 
+Envision’s OCR SDK is the best in class OCR tool built specifically to help visually impaired users read texts around them. The models we use are optimised for detecting ‘Dense Text’ like the one found in books and magazines and ‘Scene Text’ like the text found on objects and displays. On the basis of these categories, the images are pre-processed to provide the optimal output in the shortest time with the greatest accuracy. 
+
+Envision’s OCR SDK allows for two kinds of implementation:
+* Instant Text:
+This works by taking in a live video feed from a camera and providing the audio output for the detected text instantly. This is ideal for scanning through short pieces of text quickly.
+
+* Document Text:
+This works with a captured image and provides the output as segmented text blocks. This is ideal for reading long pieces of texts that need to be modified, exported and explored with VoiceOver.
+
 
 With the OCR SDK you can have apps read all kinds of text such as train numbers, menu cards in a restaurant, etc. The SDK currently supports devices that run iOS 10 and above. You can use it with both Swift and Objective-C and all platforms that interop with them.
+
+# How to get access?
+
+If you are interested in using Enision's OCR SDK in your application(s), please contact us at karthik@letsenvision.com for a trial.
 
 # iOS SDK Setup
 
@@ -68,11 +80,38 @@ print("output language: \(results[0]["language"])")
 
 The Envision OCR backend provides you with information on the current usage of your application and also allows you make request for new purchases. Currently, the usage data is updated every hour. 
 
-You can access the dashboard by going to : https://www.letsenvision.com/dashboard/<company-name>
+You can access the dashboard by going to : https://www.letsenvision.com/dashboard/[company-name]
 
 You will need a password to access this page and that would be provided by Envision when you sign up for the SDK service. 
 
+
+# Technical Specifications
+
+Compatible Operating Systems:
+* iOS 10 and above
+
+API available for:
+* Objective-C
+* Swift 3.0 and above. 
+
+SDK Input:
+* Image (JPEG, PNG, TIFF)
+* Pixel buffers 
+
+SDK Output:
+* UTF-8 String
+
+Disk Requirements:
+* 5 MB iOS 10 and 8 MB for iOS 11.
+
+RAM Requirements:
+* 256 MB RAM
+* 5 MB for the SDK to be copied from storage memory. 
+
+Hardware Requirement
+* ARMv7 processor, 600 MHz and higher
+
+
 # Troubleshooting and Support
 
-The SDK is robust enough to work across iPhone, iPad and currently supports iOS 10 and above. If you're current running into issues with the service you can write to us at sdksupport@letsenvision.com and we would be able to help you with it.
-
+The SDK is robust enough to work across iPhone, iPad and currently supports iOS 10 and above. If you're currently running into issues with the service, you can write to us at support@letsenvision.com and we would be able to help you with it.
