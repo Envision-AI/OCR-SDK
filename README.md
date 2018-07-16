@@ -27,7 +27,7 @@ If you are interested in using Enision's OCR SDK in your application(s), please 
 
 1. The SDK is available as a framework that can be  installed by simply dragging and dropping the framework into the Xcode project. You will then need to go to your Project name → General → Click on the "+" in Embedded Binaries and select the EnvisionOCR.framework file from the dropdown. 
 
-![](ScreenShot2018-07-16at11-5f0ffdd3-c3e0-454b-9431-6dd5b0225cdb.01.09.png)
+![](Screenshot of xcode with envision ocr sdk embedded.png)
 
 2. The framework also requires a small pod function effectively. You add 'SwiftyJSON' in your Podfile like seen below.
 
