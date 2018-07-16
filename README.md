@@ -1,5 +1,9 @@
 # Envision OCR  SDK Documentation
 
+## Current OCR SDK version
+Version: 1.0
+Release Date: 16/07/2018
+
 # Overview
 
 The Envision OCR SDK is capable for reading scene text(text appearing in the wild) and dense text present in documents accurately and quickly. The SDK is currently available for iOS. The SDK is able to recognise over 60 different languages and provide the text, position of the words on the image and the language detected. 
