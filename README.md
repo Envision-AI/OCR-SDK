@@ -83,7 +83,7 @@ print("output language: \(results[0]["language"])")
 
 # Accessing the backend
 
-The Envision OCR backend provides you with information on the current usage of your application and also allows you make request for new purchases. Currently, the usage data is updated every hour. 
+The Envision OCR backend provides you with information on the current usage of your application and also allows you to make requests for new purchases. Currently, the usage data is updated every hour. 
 
 You can access the dashboard by going to : https://www.letsenvision.com/dashboard/[company-name]
 
