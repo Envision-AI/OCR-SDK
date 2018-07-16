@@ -1,0 +1,11 @@
+framework module EnvisionOCR {
+  umbrella header "EnvisionOCR.h"
+
+  export *
+  module * { export * }
+}
+
+module EnvisionOCR.Swift {
+    header "EnvisionOCR-Swift.h"
+    requires objc
+}
