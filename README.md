@@ -2,6 +2,7 @@
 
 ## Current OCR SDK version
 Version: 1.0
+
 Release Date: 16/07/2018
 
 # Overview
