@@ -31,6 +31,7 @@ If you are interested in using Enision's OCR SDK in your application(s), please 
 
 2. The framework also requires a small pod function effectively. You add 'SwiftyJSON' in your Podfile like seen below.
 
+```
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
@@ -39,11 +40,13 @@ target 'envisionOCRTest' do
 use_frameworks!
 pod 'SwiftyJSON'
 end
+```
 
 # Reading Text Instantly
 
 Instant text recognition allows you to read short pieces of text in the real-world easily. It can be used to read signs in a train station,etc. The input can be provided both in terms of an image or a CMSampleBuffer object if you're running this on a live feed.
 
+```
 import EnvisionOCR
 
 var envision = Envision()
@@ -56,13 +59,14 @@ print("output text: \(results[0]["description"])")
 print("output language: \(results[0]["language"])")
 }
 }
-
+```
 # Reading Document text
 
 Document text recognition is meant for dense text such as text found in documents, books, etc. Envision can easily detect text in such items and easily return the language and segment the output into blocks, paragraphs, lines and words. 
 
 The Document text function works both with images and CMSampleBuffer objects returned from a live camera stream. 
 
+```
 import EnvisionOCR
 
 var envision = Envision()
@@ -75,6 +79,7 @@ print("output text: \(results[0]["description"])")
 print("output language: \(results[0]["language"])")
 }
 }
+```
 
 # Accessing the backend
 
