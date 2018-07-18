@@ -185,7 +185,7 @@ extension ViewController : AVCapturePhotoCaptureDelegate {
         print("got image \(image)")
         if self.documentButton.tag == btnOn {
             print("btn tag is on")
-                    envision.documentText(image: image, apiKey: "AIzaSyBn0724N8H0wOh9CcHqnkIUof-1qdxAaUE") { (result) in
+                    envision.documentText(image: image, apiKey: "API-KEY") { (result) in
                         DispatchQueue.main.async {
                             let vc = DocumentView()
                             vc.message = result[0]["description"].stringValue
@@ -198,7 +198,7 @@ extension ViewController : AVCapturePhotoCaptureDelegate {
         
         if self.instantTextButton.tag == btnOn {
             print("btn tag is on")
-            envision.instantText(image: image, apiKey: "AIzaSyBn0724N8H0wOh9CcHqnkIUof-1qdxAaUE") { (result) in
+            envision.instantText(image: image, apiKey: "API-KEY") { (result) in
                 DispatchQueue.main.async {
                     self.messageLabel.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
                     let paragraph = NSMutableParagraphStyle()
