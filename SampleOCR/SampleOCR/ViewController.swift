@@ -185,7 +185,7 @@ extension ViewController : AVCapturePhotoCaptureDelegate {
         print("got image \(image)")
         if self.documentButton.tag == btnOn {
             print("btn tag is on")
-                    envision.documentText(image: image, apiKey: "AIzaSyBn0724N8H0wOh9CcHqnkIUof-1qdxAaUE") { (result) in
+                    envision.documentText(image: image, apiKey: "AIzaSyD7VUSGrDiboIV3NhByjnNKYxJcTbSoQl0    ") { (result) in
                         DispatchQueue.main.async {
                             let vc = DocumentView()
                             vc.message = result[0]["description"].stringValue
