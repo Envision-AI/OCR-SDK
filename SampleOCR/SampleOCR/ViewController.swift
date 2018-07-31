@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     
     let instantTextButton: UIButton = {
         let btn = UIButton()
+        btn.accessibilityLabel = "Instant Text"
         btn.setBackgroundImage(#imageLiteral(resourceName: "Live Text Icon"), for: .normal)
         btn.widthAnchor.constraint(equalToConstant: 80).isActive = true
         btn.heightAnchor.constraint(equalToConstant: 80).isActive = true
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
     
     let documentButton: UIButton = {
         let btn = UIButton()
+        btn.accessibilityLabel = "Document Text"
         btn.setBackgroundImage(#imageLiteral(resourceName: "Document Text Icon"), for: .normal)
         btn.widthAnchor.constraint(equalToConstant: 80).isActive = true
         btn.heightAnchor.constraint(equalToConstant: 80).isActive = true
@@ -186,7 +188,7 @@ extension ViewController : AVCapturePhotoCaptureDelegate {
         if self.documentButton.tag == btnOn {
             print("btn tag is on")
 
-                    envision.documentText(image: image, apiKey: "AIzaSyD7VUSGrDiboIV3NhByjnNKYxJcTbSoQl0    ") { (result) in
+                    envision.documentText(image: image, apiKey: "AIzaSyD7VUSGrDiboIV3NhByjnNKYxJcTbSoQl0") { (result) in
                         DispatchQueue.main.async {
                             let vc = DocumentView()
                             vc.message = result[0]["description"].stringValue
@@ -199,7 +201,7 @@ extension ViewController : AVCapturePhotoCaptureDelegate {
         
         if self.instantTextButton.tag == btnOn {
             print("btn tag is on")
-            envision.instantText(image: image, apiKey: "API-KEY") { (result) in
+            envision.instantText(image: image, apiKey: "AIzaSyD7VUSGrDiboIV3NhByjnNKYxJcTbSoQl0") { (result) in
                 DispatchQueue.main.async {
                     self.messageLabel.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.8)
                     let paragraph = NSMutableParagraphStyle()

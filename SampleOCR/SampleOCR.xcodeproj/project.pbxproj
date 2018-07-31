@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3026657320F637CE00CC8A37 /* EnvisionOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3026657220F637CD00CC8A37 /* EnvisionOCR.framework */; };
-		3026657420F637CE00CC8A37 /* EnvisionOCR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3026657220F637CD00CC8A37 /* EnvisionOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		300F729F2109FF210084E61E /* EnvisionOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300F729E2109FF210084E61E /* EnvisionOCR.framework */; };
+		300F72A02109FF210084E61E /* EnvisionOCR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 300F729E2109FF210084E61E /* EnvisionOCR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3CBB79EB8EEDCDDD472F163F /* Pods_SampleOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943C6EA083E67176A2FD8706 /* Pods_SampleOCR.framework */; };
 		D12CAC8220F3D51E004EB5FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CAC8120F3D51E004EB5FA /* AppDelegate.swift */; };
 		D12CAC8420F3D51E004EB5FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12CAC8320F3D51E004EB5FA /* ViewController.swift */; };
@@ -29,13 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3026657520F637CE00CC8A37 /* Embed Frameworks */ = {
+		300F72A12109FF210084E61E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3026657420F637CE00CC8A37 /* EnvisionOCR.framework in Embed Frameworks */,
+				300F72A02109FF210084E61E /* EnvisionOCR.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		300F729E2109FF210084E61E /* EnvisionOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EnvisionOCR.framework; path = SampleOCR/Frameworks/EnvisionOCR.framework; sourceTree = "<group>"; };
 		3026657220F637CD00CC8A37 /* EnvisionOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EnvisionOCR.framework; path = SampleOCR/Frameworks/EnvisionOCR.framework; sourceTree = "<group>"; };
 		59964A6EBDDE6E99D11C5827 /* Pods-SampleOCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleOCR.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleOCR/Pods-SampleOCR.release.xcconfig"; sourceTree = "<group>"; };
 		943C6EA083E67176A2FD8706 /* Pods_SampleOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3026657320F637CE00CC8A37 /* EnvisionOCR.framework in Frameworks */,
+				300F729F2109FF210084E61E /* EnvisionOCR.framework in Frameworks */,
 				3CBB79EB8EEDCDDD472F163F /* Pods_SampleOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				3026657220F637CD00CC8A37 /* EnvisionOCR.framework */,
+				300F729E2109FF210084E61E /* EnvisionOCR.framework */,
 				D12CAC9320F3DF98004EB5FA /* Fonts */,
 				D12CAC8020F3D51E004EB5FA /* SampleOCR */,
 				D12CAC7F20F3D51E004EB5FA /* Products */,
@@ -160,7 +162,7 @@
 				D12CAC7B20F3D51E004EB5FA /* Frameworks */,
 				D12CAC7C20F3D51E004EB5FA /* Resources */,
 				CB78A68A92A532BD2DB3B172 /* [CP] Embed Pods Frameworks */,
-				3026657520F637CE00CC8A37 /* Embed Frameworks */,
+				300F72A12109FF210084E61E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
