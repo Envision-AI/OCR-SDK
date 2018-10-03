@@ -2,8 +2,8 @@
 //  EnvisionOCR.h
 //  EnvisionOCR
 //
-//  Created by Karthik Kannan on 01/07/2018.
-//  Copyright © 2018 Karthik Kannan. All rights reserved.
+//  Created by Nyghtwel on 8/10/18.
+//  Copyright © 2018 Nyghtwel. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
